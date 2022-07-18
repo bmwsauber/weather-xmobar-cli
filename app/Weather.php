@@ -21,6 +21,8 @@ class Weather
             $this->templateService
                 ->prepareTemplate($weatherArray)
                 ->write();
+
+            echo "has been written";
         } catch (Throwable $exception) {
             dd($exception->getMessage());
         }

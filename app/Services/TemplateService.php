@@ -108,7 +108,7 @@ class TemplateService
     private function fillTemplate(): void
     {
         $this->template = sprintf(
-            '<fn=1> <fc=%s>%s</fc></fn><fc=%s> %s°C  (<fn=1></fn> %s%%) %s<fn=1>%s </fn></fc>',
+            '<fn=1> <fc=%s>%s </fc></fn><fc=%s> %s°C  (<fn=1></fn> %s%%) %s<fn=1>%s </fn></fc>',
             $this->weather->getTemperatureColor(),
             $this->weather->getConditionIcon(),
             $this->weather->getTemperatureColor(),

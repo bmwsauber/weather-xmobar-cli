@@ -60,9 +60,9 @@ class Weather
         $this->humidity = $humidity;
     }
 
-    public function getWindSpeed(): float|int
+    public function getWindSpeed(): int
     {
-        return $this->windSpeed;
+        return (int)$this->windSpeed;
     }
 
     public function setWindSpeed(float|int $windSpeed): void
